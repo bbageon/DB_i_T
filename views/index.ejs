@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='Login.css' />
+  </head>
+  <body>
+    <div class="header">
+      <a href="/create" class="main-btn">회원가입</a>
+      <div class="login-wrapper">
+        <h2>Login</h2>
+        <form action ="/login" method="post" id="login_form">
+          <input type="number" name="userid" placeholder="아이디 입력" >
+          <input type="password" name="userPassword" placeholder="비밀번호 입력">
+          <input type="submit" value="전송"/>
+        </form>
+        
+      </div>
+      
+      <a onclick="location.href='/menu'" class="main-btn">메뉴</a>
+      <a href="basket" class="main-btn">장바구니</a>
+    </div>
+  </body>
+</html>
